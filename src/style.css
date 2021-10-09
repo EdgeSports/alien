@@ -1,0 +1,105 @@
+:root {
+  --edgeBlue: #3ad4cc;
+  --edgeRed: #db5461;
+  --edgeBackground: #272727;
+  --errorRed: #cc3d38;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #181818;
+  color: #eeeeee;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: var(--edgeBlue);
+}
+
+a:hover {
+  color: var(--edgeBlue);
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+}
+
+code {
+  color: var(--edgeBlue);
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+button.edge-button,
+input.edge-button[type="submit"] {
+  background-color: var(--edgeBlue);
+  color: #000;
+  padding: 8px 16px;
+  border: 2px solid;
+  border-color: var(--edgeBlue);
+  text-decoration: none;
+  font-size: 18px;
+  min-width: 100px;
+  text-align: center;
+}
+
+button:hover.edge-button,
+input.edge-button[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--edgeBlue);
+}
+
+button:disabled.edge-button {
+  opacity: 0.5;
+  background-color: transparent;
+  color: var(--edgeBlue);
+}
+
+/* CSS Animations */
+
+.bob-up-down {
+  animation: BobUpDown 2s ease-in-out infinite;
+}
+
+@keyframes BobUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* Utility */
+
+.show-on-hover .show-on-hover-element {
+  opacity: 0;
+}
+.show-on-hover:hover .show-on-hover-element {
+  opacity: 1;
+}

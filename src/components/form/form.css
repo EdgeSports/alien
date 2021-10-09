@@ -1,0 +1,70 @@
+.form-title {
+  margin: 30px;
+  color: #ffffff;
+}
+
+.form-entry {
+  margin: 20px 30px 10px 30px;
+}
+
+.form-entry input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.form-entry textarea {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+}
+
+.form-entry input:focus {
+  outline: none;
+}
+
+.form-entry hr {
+  margin: 10px 0;
+}
+
+.form-clickable {
+  border: none;
+  background: none;
+  color: #eeeeee;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  resize: none;
+  overflow: hidden;
+  resize: none;
+
+  transition: border-color 0.2s ease;
+
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form-clickable:hover {
+  cursor: pointer;
+  border-color: var(--edgeBlue);
+}
+
+.form-clickable:focus {
+  cursor: text;
+  border-color: var(--edgeBlue);
+}
+
+.form-clickable:disabled {
+  cursor: not-allowed;
+  border-color: gray;
+  color: gray;
+}
